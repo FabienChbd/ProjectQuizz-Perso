@@ -1,0 +1,345 @@
+.titre {
+    font-size: 2em;
+}
+
+body {
+    margin: 0;
+    background-color: #f5f5dc;
+}
+
+main {
+    margin-top: 120px;
+    margin-bottom: 900px;
+}
+
+.copyright {
+    margin: 2px
+}
+
+/* Centrage du texte sur la page*/
+.answerPageW {
+    text-align: center;
+    color: red
+}
+
+.answerPageR {
+    text-align: center;
+    color: green
+}
+
+/*image et score de la page end mobilefirst*/
+.bear {
+    display: flex;
+    margin: auto;
+}
+
+.blocScore,
+.finalScore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scoreTitle,
+.endOfQuizz {
+    font-size: 200%;
+    color: blue;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.userScoreR,
+.userScoreW,
+.score {
+    font-size: 140%;
+    color: blue
+}
+
+.beerCounter {
+    padding-bottom: 20px;
+    margin: auto
+}
+
+#wrongAnswer {
+    display: none;
+    height: 0;
+}
+
+#rightAnswer {
+    display: none;
+    height: 0
+}
+
+.cuteBear,
+.meanBear,
+.cheersPic {
+    display: none;
+    height: 0
+}
+
+/*Toute cette partie est ok pour moi (tv)*/
+/*Bouton  page answer OK*/
+
+.buttonNext {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    height: 50px;
+    margin: auto;
+}
+
+.next {
+    background-color: #FFBD3A;
+    border-radius: 14px;
+    font-size: large;
+    font-family: 'Lucida Sans';
+    width: 200px;
+    height: 50px;
+    padding: 0;
+}
+
+.next:hover {
+    background-color: #cf9011;
+}
+
+.next:active {
+    background-color: #eabc60;
+}
+
+.cheersPic {
+    display: flex;
+    margin: auto;
+}
+
+.endQuizz {
+    display: none;
+    height: 0
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: #c8ad7f;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1.2em;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-template-areas:
+        "question question question"
+        "reponse-1 reponse-1 reponse-1"
+        "reponse-2 reponse-2 reponse-2"
+        "reponse-3 reponse-3 reponse-3"
+        "reponse-4 reponse-4 reponse-4";
+}
+
+.question {
+    grid-area: question;
+    background-color: #fa5252;
+}
+
+.reponse-1 {
+    grid-area: reponse-1;
+    background-color: #228be6;
+    max-width: 80%;
+    margin-left: 10%;
+    justify-content: center;
+}
+
+.reponse-1:hover {
+    background-color: #1376cc;
+}
+
+.reponse-1:active {
+    background-color: #68afee;
+}
+
+.reponse-2 {
+    grid-area: reponse-2;
+    background-color: #7950f2;
+    max-width: 80%;
+    margin-left: 10%;
+    justify-content: center;
+}
+
+.reponse-2:hover {
+    background-color: #6840e1;
+}
+
+.reponse-2:active {
+    background-color: #a189ea;
+}
+
+.reponse-3 {
+    grid-area: reponse-3;
+    background-color: #12b886;
+    max-width: 80%;
+    margin-left: 10%;
+    justify-content: center;
+}
+
+.reponse-3:hover {
+    background-color: #0b936a;
+}
+
+.reponse-3:active {
+    background-color: #64cdae;
+}
+
+.reponse-4 {
+    grid-area: reponse-4;
+    background-color: #e64980;
+    max-width: 80%;
+    margin-left: 10%;
+    justify-content: center;
+}
+
+.reponse-4:hover {
+    background-color: #bd3263;
+}
+
+.reponse-4:active {
+    background-color: #e37fa2;
+}
+
+/* TODO : Reprende les responses --> Mettre des dimensions au box + mettre un active pour manifester le choix de la réponse à l'utilisateur */
+.question,
+.reponse-1,
+.reponse-2,
+.reponse-3,
+.reponse-4 {
+    display: flex;
+    min-width: 75%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px rgb(101, 93, 93) solid;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/*modif du todo --> la taille est fixe le problème vient du flex ou de la grid
+CODE HERE
+fin des modifs*/
+/* FIN du css grid mobile first */
+
+footer {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    bottom: 0;
+    background-color: #fab005;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 0.7em;
+}
+
+footer,
+header {
+    text-align: center;
+    width: 100%;
+    font-family: 'Permanent Marker', arial, "sans serif";
+    font-weight: lighter;
+}
+
+.logo {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    display: flex;
+}
+
+/*MAJ 270323.15:38 - à vérifier sur le index si ok / NOK - TODO : Utiliser une classe !! rattaché à l'inde.html */
+.quizz {
+    text-align: center;
+    font-family: 'Permanent Marker', arial, "sans serif";
+    font-size: 2.7em;
+    color: #550000;
+    margin-top: 90px;
+    margin-bottom: 20px;
+
+}
+
+/* Rattaché à Hello.js (easter egg caché by Fabien XD */
+.hello {
+    font-size: 2em;
+    text-align: center;
+    color: #550000;
+}
+
+/*Bouton non fonctionnel sur la page index.html*/
+
+button {
+    /* TODO - Ajouter une classe !!! */
+    width: 250px;
+    padding: 45px;
+    margin: auto;
+    margin-bottom: 80px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 0px;
+    border-style: solid;
+    position: center;
+    font-size: 25px;
+    display: block;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.score {
+    text-align: center;
+}
+
+/* au passage en vue Desktop l'affichage grid change*/
+@media screen and (min-width: 600px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 60px 20px;
+        grid-template-areas:
+            "question question question question"
+            "reponse-1 reponse-1 reponse-2 reponse-2"
+            "reponse-3 reponse-3 reponse-4 reponse-4";
+    }
+
+    .bear {
+        width: 25%;
+    }
+
+
+    .buttonNext {
+        display: flex;
+        margin-left: 400px;
+        width: 400px;
+        height: 30px;
+    }
+
+    .next {
+        background-color: #FFBD3A;
+        border-radius: 14px;
+        font-size: large;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 200px;
+        height: 50px;
+        margin-bottom: 400px;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .logo {
+        max-width: 600px;
+    }
+}
